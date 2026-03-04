@@ -222,6 +222,32 @@ video {
     border-radius: 12px;
 }
 
+
+.explicacion {
+    margin-top: 15px;
+    padding: 15px 20px;
+    background: rgba(255, 165, 0, 0.08);
+    border-left: 4px solid orange;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: lightgray;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.explicacion strong {
+    color: orange;
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.explicacion:hover {
+    background: rgba(255, 165, 0, 0.15);
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+    transform: translateY(-3px);
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
