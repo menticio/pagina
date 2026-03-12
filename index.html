@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Blog de Etiquetas HTML</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<header id="top">
+
+<h1> Mi Blog de Etiquetas HTML</h1>
+<p>Aprende las etiquetas más importantes de HTML</p>
+
+</header>
+
+
+<nav>
+
+<a href="#basicas">Básicas</a>
+<a href="#texto">Texto</a>
+<a href="#listas">Listas</a>
+<a href="#tablas">Tablas</a>
+<a href="#multimedia">Multimedia</a>
+<a href="#formularios">Formularios</a> 
+<a href="#inputs">Inputs</a>
+</nav>
+
+
+
+<main>
+
+
+<section id="basicas">
+
+<h2>Etiquetas Básicas</h2>
+
+<div class="card">
+
+<h3>&lt;!DOCTYPE html&gt;</h3>
+<p>Indica al navegador que el documento está escrito en HTML5.</p>
+
+<code>
+&lt;!DOCTYPE html&gt;
+</code>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;html&gt;</h3>
+<p>Es la etiqueta raíz de todo documento HTML.</p>
+
+<code>
+&lt;html&gt;...&lt;/html&gt;
+</code>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;head&gt;</h3>
+<p>Contiene metadatos del documento.</p>
+
+<code>
+&lt;head&gt;...&lt;/head&gt;
+</code>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;body&gt;</h3>
+<p>Contiene el contenido visible de la página.</p>
+
+<code>
+&lt;body&gt;Contenido&lt;/body&gt;
+</code>
+
+</div>
+
+</section>
+
+
+
+<section id="texto">
+
+<h2>Etiquetas de Texto</h2>
+
+
+<div class="card">
+
+<h3>&lt;h1&gt; - &lt;h6&gt;</h3>
+
+<p>Definen encabezados y títulos.</p>
+
+<code>
+&lt;h1&gt;Título&lt;/h1&gt;
+</code>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;p&gt;</h3>
+
+<p>Define un párrafo de texto.</p>
+
+<code>
+&lt;p&gt;Este es un un párrafo&lt;/p&gt;
+</code>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;br&gt;</h3>
+
+<p>Genera un salto de línea.</p>
+
+<code>
+Hola&lt;br&gt;Mundo
+</code>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;strong&gt;</h3>
+
+<p>Texto con importancia.</p>
+
+<code>
+&lt;strong&gt;Importante&lt;/strong&gt;
+</code>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;em&gt;</h3>
+
+<p>Texto con énfasis.</p>
+
+<code>
+&lt;em&gt;Énfasis&lt;/em&gt;
+</code>
+
+</div>
+
+</section>
+
+
+
+<section id="listas">
+
+<h2>Etiquetas de Listas</h2>
+
+
+
+<div class="card">
+
+<h3>&lt;ul&gt;</h3>
+
+<p>Lista desordenada.</p>
+
+<code>
+&lt;ul&gt;
+&lt;li&gt;Elemento&lt;/li&gt;
+&lt;/ul&gt;
+</code>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;ol&gt;</h3>
+
+<p>Lista ordenada.</p>
+
+<code>
+&lt;ol&gt;
+&lt;li&gt;Elemento&lt;/li&gt;
+&lt;/ol&gt;
+</code>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;li&gt;</h3>
+
+<p>Elemento de lista.</p>
+
+</div>
+
+</section>
+
+
+
+
+<section id="tablas">
+
+<h2>Etiquetas de Tablas</h2>
+
+
+
+<div class="card">
+
+<h3>&lt;table&gt;</h3>
+<p>Define una tabla.</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;tr&gt;</h3>
+<p>Define una fila.</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;td&gt;</h3>
+<p>Define una celda.</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;th&gt;</h3>
+<p>Encabezado de tabla.</p>
+
+</div>
+
+</section>
+
+
+
+<section id="multimedia">
+
+<h2>Etiquetas Multimedia</h2>
+
+
+
+<div class="card">
+
+<h3>&lt;img&gt;</h3>
+
+<p>Permite mostrar imágenes.</p>
+
+<img src="https://picsum.photos/300" width="200">
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;audio&gt;</h3>
+
+<p>Permite reproducir audio.</p>
+
+<audio controls>
+<source src="multimedia/audio.ogg">
+</audio>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>&lt;video&gt;</h3>
+
+<p>Permite reproducir videos.</p>
+
+<video width="250" controls>
+<source src="multimedia/video.mp4">
+</video>
+
+</div>
+
+</section>
+
+
+
+<section id="formularios">
+
+<h2>Formulario de Contacto</h2>
+
+
+
+<form id="formulario">
+
+<label>Nombre</label>
+<input type="text" id="nombre" required>
+
+
+<label>Email</label>
+<input type="email" id="email" required>
+
+
+<label>Mensaje</label>
+<textarea id="mensaje"></textarea>
+
+
+<button type="submit">Enviar</button>
+
+</form>
+
+
+<p id="respuesta"></p>
+
+
+</section>
+
+<section id="inputs">
+
+<h2>Tipos de Inputs en HTML</h2>
+
+<!-- INPUT TEXT -->
+<div class="card">
+
+<h3>&lt;input type="text"&gt;</h3>
+
+<p>Permite al usuario escribir texto corto como nombres o datos básicos.</p>
+
+<p><strong>¿Para qué sirve?</strong> Se usa para capturar información escrita por el usuario.</p>
+
+<code>
+&lt;input type="text" placeholder="Escribe tu nombre"&gt;
+</code>
+
+<input type="text" placeholder="Escribe tu nombre">
+
+</div>
+
+
+<!-- INPUT EMAIL -->
+<div class="card">
+
+<h3>&lt;input type="email"&gt;</h3>
+
+<p>Permite ingresar una dirección de correo electrónico.</p>
+
+<p><strong>¿Para qué sirve?</strong> El navegador valida automáticamente el formato del email.</p>
+
+<code>
+&lt;input type="email" placeholder="correo@email.com"&gt;
+</code>
+
+<input type="email" placeholder="correo@email.com">
+
+</div>
+
+
+<!-- INPUT PASSWORD -->
+<div class="card">
+
+<h3>&lt;input type="password"&gt;</h3>
+
+<p>Permite ingresar contraseñas ocultando los caracteres.</p>
+
+<p><strong>¿Para qué sirve?</strong> Se usa para proteger información sensible.</p>
+
+<code>
+&lt;input type="password" placeholder="Contraseña"&gt;
+</code>
+
+<input type="password" placeholder="Contraseña">
+
+</div>
+
+
+<!-- INPUT NUMBER -->
+<div class="card">
+
+<h3>&lt;input type="number"&gt;</h3>
+
+<p>Permite ingresar únicamente números.</p>
+
+<p><strong>¿Para qué sirve?</strong> Se usa para datos numéricos como edad o cantidades.</p>
+
+<code>
+&lt;input type="number" min="1" max="100"&gt;
+</code>
+
+<input type="number" min="1" max="100">
+
+</div>
+
+
+<!-- INPUT DATE -->
+<div class="card">
+
+<h3>&lt;input type="date"&gt;</h3>
+
+<p>Permite seleccionar una fecha usando un calendario.</p>
+
+<p><strong>¿Para qué sirve?</strong> Se usa para registrar fechas como cumpleaños o reservas.</p>
+
+<code>
+&lt;input type="date"&gt;
+</code>
+
+<input type="date">
+
+</div>
+
+
+<!-- INPUT COLOR -->
+<div class="card">
+
+<h3>&lt;input type="color"&gt;</h3>
+
+<p>Permite seleccionar un color mediante un selector visual.</p>
+
+<p><strong>¿Para qué sirve?</strong> Se usa para personalizar colores en aplicaciones.</p>
+
+<code>
+&lt;input type="color"&gt;
+</code>
+
+<input type="color">
+
+</div>
+
+
+<!-- INPUT FILE -->
+<div class="card">
+
+<h3>&lt;input type="file"&gt;</h3>
+
+<p>Permite subir archivos desde el dispositivo.</p>
+
+<p><strong>¿Para qué sirve?</strong> Se usa para cargar documentos, imágenes o archivos.</p>
+
+<code>
+&lt;input type="file"&gt;
+</code>
+
+<input type="file">
+
+</div>
+
+
+<!-- INPUT CHECKBOX -->
+<div class="card">
+
+<h3>&lt;input type="checkbox"&gt;</h3>
+
+<p>Permite seleccionar varias opciones.</p>
+
+<p><strong>¿Para qué sirve?</strong> Se usa cuando el usuario puede elegir múltiples opciones.</p>
+
+<code>
+&lt;input type="checkbox"&gt; HTML
+&lt;input type="checkbox"&gt; CSS
+&lt;input type="checkbox"&gt; JavaScript
+</code>
+
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> JavaScript
+
+</div>
+
+
+<!-- INPUT RADIO -->
+<div class="card">
+
+<h3>&lt;input type="radio"&gt;</h3>
+
+<p>Permite seleccionar solo una opción dentro de un grupo.</p>
+
+<p><strong>¿Para qué sirve?</strong> Se usa cuando el usuario debe elegir solo una respuesta.</p>
+
+<code>
+&lt;input type="radio" name="lenguaje"&gt; HTML
+&lt;input type="radio" name="lenguaje"&gt; CSS
+&lt;input type="radio" name="lenguaje"&gt; JavaScript
+</code>
+
+<input type="radio" name="lenguaje"> HTML
+<input type="radio" name="lenguaje"> CSS
+<input type="radio" name="lenguaje"> JavaScript
+
+</div>
+
+
+<!-- INPUT RANGE -->
+<div class="card">
+
+<h3>&lt;input type="range"&gt;</h3>
+
+<p>Permite seleccionar un valor dentro de un rango usando un control deslizante.</p>
+
+<p><strong>¿Para qué sirve?</strong> Se usa para niveles como volumen o intensidad.</p>
+
+<code>
+&lt;input type="range" min="0" max="10"&gt;
+</code>
+
+<input type="range" min="0" max="10">
+
+</div>
+
+
+<!-- TEXTAREA -->
+<div class="card">
+
+<h3>&lt;textarea&gt;</h3>
+
+<p>Permite ingresar textos largos.</p>
+
+<p><strong>¿Para qué sirve?</strong> Se usa para comentarios o mensajes.</p>
+
+<code>
+&lt;textarea rows="4"&gt;&lt;/textarea&gt;
+</code>
+
+<textarea rows="4"></textarea>
+
+</div>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+<p>Blog educativo de etiquetas HTML</p>
+
+</footer>
+
+
+
+<button id="btnArriba">⬆</button>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
