@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: black;
+    --card: #111;
+    --text: white;
+    --subtext: lightgray;
+    --accent: orange;
+    --accent2: blue;
+    --energy: yellow;
+    --border: gray;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(90deg, orange, blue);
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 10px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background-color: #111;
+}
+
+nav a {
+    color: lightgray;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: yellow;
+    text-shadow: 0 0 10px yellow;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+article {
+    background: #111;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    transition: 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    border-color: orange;
+    box-shadow: 0 0 20px orange;
+}
+
+h2, h3 {
+    margin-bottom: 15px;
+    color: orange;
+}
+
+ul, ol {
+    padding-left: 20px;
+    color: lightgray;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid gray;
+    text-align: left;
+}
+
+th {
+    background-color: blue;
+    color: white;
+}
+
+form {
+    background: #111;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid gray;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: black;
+    border: 1px solid gray;
+    border-radius: 8px;
+    color: white;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: orange;
+    box-shadow: 0 0 10px orange;
+}
+
+button {
+    background: linear-gradient(45deg, orange, yellow);
+    color: black;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 15px yellow;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.figth-Freezer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.figth-Freezer img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.figth-Freezer img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px yellow;
+}
+
+aside {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid orange;
+    color: lightgray;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #111;
+    color: lightgray;
+    font-size: 0.9rem;
+}
+
+video, audio {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+
+.explicacion {
+    margin-top: 15px;
+    padding: 15px 20px;
+    background: rgba(255, 165, 0, 0.08);
+    border-left: 4px solid orange;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: lightgray;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.explicacion strong {
+    color: orange;
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.explicacion:hover {
+    background: rgba(255, 165, 0, 0.15);
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .figth-Freezer {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
